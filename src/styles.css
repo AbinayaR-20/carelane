@@ -1,0 +1,18 @@
+:root{--bg:#f2f6f7;--card:#fff;--ink:#12303a;--mute:#5d7580;--line:#d9e4e8;--teal:#0e7c86;--crit:#c8372d;--urg:#c9831a;--std:#3e8e5a;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1d23;--card:#152a32;--ink:#e6f0f3;--mute:#8fa8b2;--line:#25414c;--teal:#3cb6c1;--crit:#ef6a5f;--urg:#e5a84a;--std:#6cc08a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:20px 16px 40px}header{display:flex;justify-content:space-between;align-items:start}
+h1{margin:0;font-size:1.7rem}h2{font-size:1.05rem;margin:0 0 12px}.sub,.meta,.empty,label{color:var(--mute)}.sub{margin:2px 0 18px}
+.grid{display:grid;grid-template-columns:300px 1fr;gap:18px;align-items:start}@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}.login{max-width:360px;margin:40px auto}
+label{display:block;font-size:.85rem;margin:10px 0 3px}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+input,select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 12px}
+button:disabled{opacity:.5;cursor:not-allowed}button.main{background:var(--teal);color:#fff;border-color:var(--teal);width:100%;margin-top:14px;padding:10px;font-weight:600}
+button.link{border:0;background:none;color:var(--teal);width:100%;margin-top:8px}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}.hint{font-size:.85rem;color:var(--mute)}.err{color:var(--crit)}
+.docs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.doc{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:.85rem}.doc.busy{border-color:var(--urg)}.doc small{display:block;color:var(--mute)}
+.item{display:grid;grid-template-columns:6px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.bar{align-self:stretch;border-radius:3px}.p-critical .bar{background:var(--crit)}.p-urgent .bar{background:var(--urg)}.p-standard .bar{background:var(--std)}
+.name{font-weight:600}.tag{font-size:.78rem;font-weight:600;margin-left:6px}.p-critical .tag{color:var(--crit)}.p-urgent .tag{color:var(--urg)}.p-standard .tag{color:var(--std)}
+.sect{font-size:.85rem;color:var(--mute);margin:14px 0 2px;font-weight:600}
